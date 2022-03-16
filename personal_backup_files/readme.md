@@ -6,8 +6,8 @@
 ### Set good path :  
 Set good path of binary within script begin (MacOS vs Linux).  
 Example to :  
-#BIN_BASENAME="/usr/bin/basename" #MacOS
-BIN_BASENAME="/bin/basename" #Linux
+#BIN_BASENAME="/usr/bin/basename" #MacOS  
+BIN_BASENAME="/bin/basename" #Linux  
 
 ### Set parameter :
 EXCLUDE_TAR : list of exclude extension, default : "--exclude=*.rpm --exclude=*.log"      
