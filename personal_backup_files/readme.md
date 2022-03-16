@@ -3,7 +3,8 @@
 
 ## Execution :
 
-‘‘‘./backup.sh -h
+‘‘‘
+./backup.sh -h
 Usage: backup.sh [-h] [-V] [-D] -e
 
 Backup personal files.
