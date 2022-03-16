@@ -1,5 +1,17 @@
 #!/usr/bin/env bash
 
+################################################
+#
+# Desc : script to ....
+# Creation date : 2020316
+# Author : Alasta
+# Last modification :
+#   - 20220316 : Alasta : Update ....
+#
+################################################
+
+
+
 BIN_BASENAME="/usr/bin/basename"
 BIN_CAT="/bin/cat"
 BIN_CD="/usr/bin/cd"
