@@ -13,7 +13,7 @@ BIN_BASENAME="/bin/basename" #Linux
 EXCLUDE_TAR : list of exclude extension, default : "--exclude=*.rpm --exclude=*.log"      
 REMOTE_FOLDER_BCK : path of target backup, default : "/tmp/"  
   
-Fill the backup file list : /path/of/script/ressources_to_backup (1 by line)    
+Fill the backup file list : /path/of/script/ressources_to_backup (1 complet path file by line)    
 
 
 ## Execution :
