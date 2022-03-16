@@ -14,7 +14,6 @@
 
 BIN_BASENAME="/usr/bin/basename"
 BIN_CAT="/bin/cat"
-BIN_CD="/usr/bin/cd"
 BIN_DIRNAME="/usr/bin/dirname"
 #Difference between Linux and macos with complet path and builtin
 #BIN_ECHO="/bin/echo"
@@ -37,7 +36,7 @@ f_cleanup() {
 
 
 
-SCRIPT_DIR=$(${BIN_CD} "$(${BIN_DIRNAME} "${BASH_SOURCE[0]}")" &>/dev/null && ${BIN_PWD} -P)
+SCRIPT_DIR=$(cd "$(${BIN_DIRNAME} "${BASH_SOURCE[0]}")" &>/dev/null && ${BIN_PWD} -P)
 
 #Help/Usage
 f_usage() {
