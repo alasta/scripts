@@ -96,7 +96,7 @@ f_parse_params() {
       h) f_usage
          exit 1
       ;;
-      V) f_msg ${VERSION}
+      V) f_msg "Script version : ${VERSION}"
       ;;
       p) MY_PARAM_VALUE="$OPTARG"
       ;;  
