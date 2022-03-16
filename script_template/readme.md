@@ -1,6 +1,6 @@
 # Bash script template
 
-To initiale bash script.
+To initiale a bash script.
 
 
 
