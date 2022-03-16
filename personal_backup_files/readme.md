@@ -1,6 +1,21 @@
 # Backup Personal files
 
 
+
+## Before execution :
+### Set good path :  
+Set good path of binary within script begin (MacOS vs Linux).  
+Example to :  
+#BIN_BASENAME="/usr/bin/basename" #MacOS
+BIN_BASENAME="/bin/basename" #Linux
+
+### Set parameter :
+EXCLUDE_TAR : list of exclude extension, default : "--exclude=*.rpm --exclude=*.log"    
+REMOTE_FOLDER_BCK : path of target backup, default : "/tmp/"
+
+Fill the backup file list : /path/of/script/ressources_to_backup (1 by line)  
+
+
 ## Execution :
 
 ```
