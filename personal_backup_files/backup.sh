@@ -12,7 +12,8 @@
 
 
 
-BIN_BASENAME="/usr/bin/basename"
+#BIN_BASENAME="/usr/bin/basename" #MacOS
+BIN_BASENAME="/bin/basename" #Linux
 BIN_CAT="/bin/cat"
 BIN_DATE="/bin/date"
 BIN_DIRNAME="/usr/bin/dirname"
@@ -21,8 +22,8 @@ BIN_DIRNAME="/usr/bin/dirname"
 BIN_ECHO="echo"
 BIN_HOSTNAME="/bin/hostname"
 BIN_PWD="/bin/pwd"
-BIN_TAR="/bin/tar" #Linux
-#BIN_TAR="/usr/bin/tar" #MacOS
+#BIN_TAR="/bin/tar" #Linux
+BIN_TAR="/usr/bin/tar" #MacOS
 
 
 
@@ -32,7 +33,7 @@ SCRIPT_DIR=$(cd "$(${BIN_DIRNAME} "${BASH_SOURCE[0]}")" &>/dev/null && ${BIN_PWD
 VERSION="0.1"
 C_EXECUTE=""
 
-FILE_LIST_TO_BCK="${SCRIPT_DIR}/ressources_to_backup"
+FILE_LIST_TO_BCK="${SCRIPT_DIR} "
 
 FILE_LIST_TAR=""
 FILENAME_BCK="bck_personal_config_"$(${BIN_HOSTNAME})"_"$(${BIN_DATE} "+%Y%m%d_%s.tgz")
@@ -63,6 +64,7 @@ f_usage() {
 Usage: $(${BIN_BASENAME} "${BASH_SOURCE[0]}") [-h] [-V] [-D] -e
 
 Backup personal files.
+Use reference file : ${FILE_LIST_TO_BCK} (1 file by line)
 
 Available options:
 
@@ -85,10 +87,14 @@ f_setup_colors() {
 }
 
 
+
+
+
 #Script message
 f_msg() {
   "${BIN_ECHO}" >&2 -e "${1-}"
     #echo  >&2 -e "${1-}"
+
 }
 
 #bad output
@@ -122,6 +128,8 @@ f_backup(){
   f_msg "${GREEN}OK${NOFORMAT}"
 
 }
+
+
 
 
 f_parse_params() {
