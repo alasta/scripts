@@ -48,6 +48,7 @@ To get this informations in Home Assistant, add the following sensors in your co
   name: "resource rpi wmbusmeters percent disk use root"
   state_topic: "<C_MQTT_TOPIC>"
   unit_of_measurement: "%"
+  state_class: measurement
   value_template: "{{ value_json['percent_disk_use_root']}}"
   icon: mdi:harddisk
 
@@ -55,6 +56,7 @@ To get this informations in Home Assistant, add the following sensors in your co
   name: "resource rpi wmbusmeters percent disk use boot"
   state_topic: "<C_MQTT_TOPIC>"
   unit_of_measurement: "%"
+  state_class: measurement
   value_template: "{{ value_json['percent_disk_use_boot']}}"
   icon: mdi:harddisk
 
@@ -62,6 +64,7 @@ To get this informations in Home Assistant, add the following sensors in your co
   name: "resource rpi wmbusmeters percent memory usage"
   state_topic: "<C_MQTT_TOPIC>"
   unit_of_measurement: "%"
+  state_class: measurement
   value_template: "{{ value_json['percent_mem_usage']}}"
   icon: mdi:memory
 
@@ -69,6 +72,7 @@ To get this informations in Home Assistant, add the following sensors in your co
   name: "resource rpi wmbusmeters percent cpu usage"
   state_topic: "<C_MQTT_TOPIC>"
   unit_of_measurement: "%"
+  state_class: measurement
   value_template: "{{ value_json['percent_cpu_usage']}}"
   icon: mdi:cpu-32-bit
 
