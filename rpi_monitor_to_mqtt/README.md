@@ -29,5 +29,5 @@ Modify the following variables :
 Edit crontab :
 ```
 \# Monitoring RPI to MQTT server
-*/5     *       *       *       *       /path/to/script/rpi_monitor_send_mqtt.sh
+*/5     *       *       *       *       /path/to/script/rpi_monitor_send_to_mqtt.sh
 ```
