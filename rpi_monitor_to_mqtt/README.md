@@ -79,7 +79,7 @@ To get this informations in Home Assistant, add the following sensors in your co
 - platform: mqtt
   name: "resource rpi wmbusmeters cpu temperature"
   state_topic: "<C_MQTT_TOPIC>"
-  unit_of_measurement: "C"
+  unit_of_measurement: "°C"
   state_class: measurement
   device_class: temperature
   value_template: "{{ (value_json['cpu_temp_celsius']|float * 0.001)|round(2)}}"
