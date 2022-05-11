@@ -1,0 +1,28 @@
+#cloud-config
+
+#Mise a jour de l'os
+package_update: true
+package_upgrade: true
+
+#Installation de paquet
+packages:
+  - curl
+  - wget
+  - vim
+  - sudo
+  - tmux
+  - lsof
+
+#Ajout d'un utilisateur
+users:
+    - default
+    - name: alasta
+      groups: [ sudo ]
+      shell: /bin/bash
+      homedir: /home/alasta
+      sudo: ['ALL=(ALL) NOPASSWD:ALL']
+      lock_passwd: false
+  	  passwd: $6$xyz$VKswtvLoVpOLcpjDMIFXhxa8ukqqKSKHjcPBLZUk9NxWldmlFQY4stUGo.QjEhav7mp86ih2PRqYPqjkhWi5y.
+        #ssh_authorized_keydds: #Public keys
+runcmd:
+  - touch /tmp/touchtest
