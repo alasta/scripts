@@ -22,6 +22,13 @@ Command to clone a new VM
 qm clone 1002 305 --name rockylinux8test6
 
 
+## User Data to custom Cloudinit :
+Put the **user-data-redhat-like.yaml** file to **/var/lib/vz/snippets/**.
+Password of Alasta user is : yourpass
+
+Generate the password :
+openssl passwd -6 -salt xyz  yourpass
+
 ## Bonus :
 Cloud images :  
 - <a href="https://cloud-images.ubuntu.com/" target=_blank>Ubuntu</a>
