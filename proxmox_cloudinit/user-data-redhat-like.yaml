@@ -24,5 +24,9 @@ users:
       lock_passwd: false
   	  passwd: $6$xyz$VKswtvLoVpOLcpjDMIFXhxa8ukqqKSKHjcPBLZUk9NxWldmlFQY4stUGo.QjEhav7mp86ih2PRqYPqjkhWi5y.
         #ssh_authorized_keydds: #Public keys
+
+fqdn: myhostname.myfqdn
+hostname: myhostname
+
 runcmd:
   - touch /tmp/touchtest
