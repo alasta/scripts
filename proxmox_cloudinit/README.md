@@ -23,7 +23,7 @@ qm clone 1002 305 --name rockylinux8test6
 
 
 ## User Data to custom Cloudinit :
-Put the **user-data-redhat-like.yaml** file to **/var/lib/vz/snippets/**.
+Put the **user-data-redhat-like.yaml** file to **/var/lib/vz/snippets/**.  
 Password of Alasta user is : yourpass
 
 Generate the password :
