@@ -17,9 +17,12 @@ qm set 1002 --cicustom "user=local:snippets/user-data-redhat-like.yaml"
 qm template 1002
 ```
 
-**Note :**
-Command to clone a new VM
-qm clone 1002 305 --name rockylinux8test6
+**Note :**  
+Command to clone a new VM  
+```qm clone 1002 305 --name rockylinux8test6  ```
+  
+This Cloudinit image not allow an user with ssh password, it 's just to Proxmox console.  
+
 
 
 ## User Data to custom Cloudinit :
