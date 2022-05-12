@@ -30,3 +30,9 @@ hostname: myhostname
 
 runcmd:
   - touch /tmp/touchtest
+  - wget https://raw.githubusercontent.com/alasta/dotfiles/master/.bash_profile -O /home/alasta/.bash_profile
+  - wget https://raw.githubusercontent.com/alasta/dotfiles/master/.inputrc -O /home/alasta/.inputrc
+  - wget https://raw.githubusercontent.com/alasta/dotfiles/master/.tmux.conf -O /home/alasta/.tmux.conf
+  - wget https://raw.githubusercontent.com/alasta/dotfiles/master/.vimrc -O /home/alasta/.vimrc
+  - chown -R alasta:alasta /home/alasta/
+  - wget https://raw.githubusercontent.com/alasta/dotfiles/master/.bash_profile_root -O ~/.bash_profile
